@@ -12,11 +12,15 @@ pub struct Player;
 
 /// Read directional input and return a direction vector
 fn read_movement_input(input: &ButtonInput<KeyCode>) -> Vec2 {
-    const MOVEMENT_KEYS: [(KeyCode, Vec2); 4] = [
+    const MOVEMENT_KEYS: [(KeyCode, Vec2); 8] = [
         (KeyCode::ArrowLeft, Vec2::NEG_X),
         (KeyCode::ArrowRight, Vec2::X),
         (KeyCode::ArrowUp, Vec2::Y),
         (KeyCode::ArrowDown, Vec2::NEG_Y),
+        (KeyCode::KeyA, Vec2::NEG_X),
+        (KeyCode::KeyD, Vec2::X),
+        (KeyCode::KeyW, Vec2::Y),
+        (KeyCode::KeyS, Vec2::NEG_Y),
     ];
     
     MOVEMENT_KEYS.iter()
