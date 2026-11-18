@@ -1,4 +1,5 @@
 use bevy::prelude::*;
+use serde::{Deserialize, Serialize};
 use crate::characters::config::{CharacterEntry, AnimationType};
 use crate::characters::state::CharacterState;
 use crate::characters::facing::Facing;
